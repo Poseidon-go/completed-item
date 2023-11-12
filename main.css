@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* user-select: none; */
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* .todo-btn .button-style {
+    padding: 20px 40px;
+} */

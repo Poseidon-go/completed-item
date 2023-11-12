@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <h1>Poseidon IT</h1>
+  <sectiion class="my-4l">
+    <div class="container">
+      <form id="todoFormId">
+        <div class="mb-3">
+          <label for="todoText" class="form-label">What are you going to do?</label>
+          <input type="text" name="todoText" class="form-control" id="todoText">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </sectiion>
+
+  <sectiion class="my-4">
+    <div class="container  mt-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Search</span>
+        <input type="text" class="form-control" placeholder="What are you looking for?" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+    </div>
+  </sectiion>
+
+  <section class="my-4">
+    <div class="container">
+      <h1>TODO LIST</h1>
+      <ul id="todoList" class="todo-list"></ul>
+    </div>
+  </section>
+
+  <!-- todo Template -->
+  <template id="todoTemplate">
+    <li>
+      <div class="todo alert alert-secondary" role="alert">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="todo__title mb-0">TODO TITLE</p>
+          <div class="todo__actions">
+            <button type="button" class="btn btn-sm btn-primary edit">
+              Edit
+            </button>
+            <button type="button" class="btn btn-sm btn-success mark-as-done">
+              Finish
+            </button>
+            <button type="button" class="btn btn-sm btn-danger remove">
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </template>
+  <script src="./creatElement.js"></script>
+</body>
+
+</html>
